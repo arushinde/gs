@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register - GS Cosmetics</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #dbdce0; /* Beige */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c39898; /* Gold */
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover{
+            color: #FFFFFF;
+            text-decoration:overline;
+        }
+
+        .active{
+            color: #FFFFFF;
+            text-decoration: overline;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 600px; /* Optional max-width */
+            margin: 0 auto;
+            background-color: #FFFFFF; /* White */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #dbdce0;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #c39898; /* Gold */
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            display: inline-block; /* Make button inline */
+        }
+
+        button:hover {
+            background-color: #987070; /* Darker gold */
+        }
+
+        .funny-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #c39898; /* Gold */
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GS Cosmetics</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Welcome to the Login Page!</h1>
+    <img src="login1.jfif" alt="Funny Login" class="funny-image" style="border-radius: 20%;"> <!-- Replace with a funny image -->
+
+    <p>Oops! Looks like you stumbled upon the login/register page. Don't worry; it's not as scary as it sounds!</p>
+    <p>Whether you're a makeup master or a beauty newbie, we need you to log in or create an account to unleash your inner beauty guru!</p>
+
+    <h2>Login</h2>
+    <form>
+        <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="login-email" required>
+        </div>
+        <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="login-password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Or Register</h2>
+    <form>
+        <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" name="register-email" required>
+        </div>
+        <div class="form-group">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" name="register-password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Remember, with great makeup comes great responsibility! Just kidding, it's all about having fun!</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 GS Cosmetics. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

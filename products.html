@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS Cosmetics - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dbdce0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c39898; /* Gold */
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            padding: 15px 15px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover{
+            color: #FFFFFF;
+            text-decoration:overline;
+        }
+
+        .active{
+            color: #FFFFFF;
+            text-decoration: overline;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #FFFFFF;
+            border: 1px solid #c39898;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #000;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #c39898;
+            margin: 5px 0;
+        }
+
+        .add-to-cart {
+            background-color: #c39898;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #c39898;
+        }
+
+        footer {
+            background-color: #c39898;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GS. Cosmetics</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="product-container">
+    <!-- Repeat this block for each product -->
+    <div class="product-card">
+        <img src="gs1.jpg" alt="Product 1" class="product-image">
+        <h2 class="product-title">Product 1</h2>
+        <p class="product-price">$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs2.jpg" alt="Product 2" class="product-image">
+        <h2 class="product-title">Product 2</h2>
+        <p class="product-price">$24.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs3.jpg" alt="Product 3" class="product-image">
+        <h2 class="product-title">Product 3</h2>
+        <p class="product-price">$15.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs4.jpg" alt="Product 4" class="product-image">
+        <h2 class="product-title">Product 4</h2>
+        <p class="product-price">$22.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs5.jpg" alt="Product 5" class="product-image">
+        <h2 class="product-title">Product 5</h2>
+        <p class="product-price">$18.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs6.jpg" alt="Product 6" class="product-image">
+        <h2 class="product-title">Product 6</h2>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs7.jpg" alt="Product 7" class="product-image">
+        <h2 class="product-title">Product 7</h2>
+        <p class="product-price">$14.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs8.jpg" alt="Product 8" class="product-image">
+        <h2 class="product-title">Product 8</h2>
+        <p class="product-price">$27.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs9.jpg" alt="Product 9" class="product-image">
+        <h2 class="product-title">Product 9</h2>
+        <p class="product-price">$21.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs10.jpg" alt="Product 10" class="product-image">
+        <h2 class="product-title">Product 10</h2>
+        <p class="product-price">$16.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs11.jpg" alt="Product 11" class="product-image">
+        <h2 class="product-title">Product 11</h2>
+        <p class="product-price">$23.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs12.jpg" alt="Product 12" class="product-image">
+        <h2 class="product-title">Product 12</h2>
+        <p class="product-price">$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs13.jpg" alt="Product 13" class="product-image">
+        <h2 class="product-title">Product 13</h2>
+        <p class="product-price">$24.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs14.jpg" alt="Product 14" class="product-image">
+        <h2 class="product-title">Product 14</h2>
+        <p class="product-price">$15.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs15.jpg" alt="Product 15" class="product-image">
+        <h2 class="product-title">Product 15</h2>
+        <p class="product-price">$22.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs16.jpg" alt="Product 16" class="product-image">
+        <h2 class="product-title">Product 16</h2>
+        <p class="product-price">$18.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs1.jpg" alt="Product 17" class="product-image">
+        <h2 class="product-title">Product 17</h2>
+        <p class="product-price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gs2.jpg" alt="Product 18" class="product-image">
+        <h2 class="product-title">Product 18</h2>
+        <p class="product-price">$14.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 GS Cosmetics. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
